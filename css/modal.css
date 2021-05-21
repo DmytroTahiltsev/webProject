@@ -1,0 +1,145 @@
+.feedback__headline{
+    padding: 0 25px;
+}
+.feedback__headline h2{
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+}
+.form-call{
+    padding: 30px 25px;
+}
+.call-button{
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    background-color: #ed4457;
+    width: 250px;
+    height: 120px;
+    border: 0;
+    border-radius: 3px;
+    transition: background-color .3s;
+}
+.call-button:hover{
+    background-color:#eb2f45 ;
+}
+.dmodal.open .modal-overlay,
+.dmodal.open .modal-window{
+    opacity: 1;
+    z-index: 5;
+}
+.dmodal.hide .modal-overlay,
+.dmodal.hide .modal-window{
+    opacity: 1;
+    z-index: 5;
+}
+.dmodal.open .modal-window{
+    transform: translateY(150px);
+    transition: transform 500ms ease-in;
+}
+.dmodal.open .modal-overlay{
+    transition: background 500ms ease-in;
+    background: rgba(0,0,0,.5);
+}
+.dmodal.hide .modal-window{
+    transform: translateY(-300px);
+    transition: transform 500ms ease-in;
+
+}
+.dmodal.hide .modal-overlay{
+    background: rgba(0,0,0,0);
+    transition: background 500ms ease-in;
+}
+.modal-window, .modal-overlay{
+    opacity: 0;
+    z-index: -1;
+}
+.modal-overlay{
+    position:fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+}
+.modal-window{
+    border-radius: 5px;
+    background: #1f9dac;
+    margin:0 auto;
+    transform: translateY(-300px);
+
+}
+.modal-header{
+    display:flex;
+    justify-content: space-between;
+    padding: 7px 7px 7px 15px;
+    border-bottom: 1px solid rgba(10, 54, 161, 0.2);
+    color: white;
+   
+}
+.modal-title{
+    font-size: 1.7rem;
+}
+.modal-close{
+    cursor:pointer;
+
+}
+.modal-body{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-body p{
+    margin:0 0 5px;
+}
+.modal-footer{
+    padding: 5px 5px 5px 15px;
+    border-top: 1px solid rgba(10, 54, 161, 0.2);
+    color: white;
+}
+.modal-footer button{
+    border: 1px solid black;
+}
+
+.modal-input{
+    padding: 10px 15px;
+    margin: 5px 10px;
+    box-sizing: border-box;
+
+}
+.modal-submit{
+    margin-top: 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1em;
+    background-color: #ed4457;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 3px;
+    transition: background-color .3s;
+}
+.modal-submit:hover{
+    background-color:#eb2f45 ;
+}
+.modal-banner{
+    width: 650px;
+    height: 370px;
+}
+.modal-banner img{
+    width: 100%;
+    height: auto;
+}
+@media(max-width:767px){
+    .modal-banner{
+        display: none;
+    }
+    .modal-body{
+        justify-content: center;
+    }
+    .modal-input{
+        width: 100%;
+        margin: 5px auto;
+    }
+
+}

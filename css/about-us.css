@@ -1,0 +1,19 @@
+.about-us{
+    padding-top: 90px;
+}
+.about-us__headline{
+    padding: 0 25px;
+}
+.about-us h2{
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+}
+.about-us__info{
+    padding: 10px 25px;
+    background-color: rgb(236, 236, 236);
+    font-size: 1.2em;
+    font-weight: 650;
+    margin: 15px 25px ;
+    border-radius: 5px;
+}
